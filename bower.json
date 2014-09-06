@@ -1,0 +1,18 @@
+{
+	"version": "0.0.0",
+	"license": "AGPL v3",
+	"ignore": [
+		"js/index.js",
+		"js/src",
+		"test",
+		"pkg.json",
+		"package.json",
+		".groc.json",
+		".gitignore",
+		"README.md"
+	],
+	"description": "memory management code bricks for JavaScript",
+	"main": "js/dist/mem.js",
+	"homepage": "http://aureooms.github.io/js-mem/",
+	"name": "aureooms-js-mem"
+}

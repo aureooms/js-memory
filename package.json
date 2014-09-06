@@ -1,0 +1,34 @@
+{
+	"devDependencies": {
+		"aureooms-node-package": "^0.3.2"
+	},
+	"bugs": {
+		"url": "https://github.com/aureooms/js-mem/issues"
+	},
+	"homepage": "http://aureooms.github.io/js-mem/",
+	"description": "memory management code bricks for JavaScript",
+	"main": "js/dist/mem.js",
+	"author": "aureooms",
+	"name": "aureooms-js-mem",
+	"scripts": {
+		"build": "./node_modules/.bin/aureooms-node-package-build",
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"doc": "./node_modules/.bin/groc"
+	},
+	"version": "0.0.0",
+	"license": "AGPL v3",
+	"dependencies": {},
+	"keywords": [
+		"allocation",
+		"arrays",
+		"bricks",
+		"javascript",
+		"js",
+		"management",
+		"memory"
+	],
+	"repository": {
+		"url": "https://github.com/aureooms/js-mem.git",
+		"type": "git"
+	}
+}

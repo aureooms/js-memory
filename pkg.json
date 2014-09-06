@@ -1,0 +1,17 @@
+{
+	"ns": "mem",
+	"src": "js/src/",
+	"debug": false,
+	"out": "js/dist/",
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"mem.js"
+		]
+	}
+}
