@@ -1,6 +1,6 @@
 {
 	"version": "0.0.1",
-	"license": "AGPL v3",
+	"license": "AGPL-3.0",
 	"ignore": [
 		"js/index.js",
 		"js/src",
