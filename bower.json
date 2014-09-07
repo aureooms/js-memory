@@ -8,6 +8,7 @@
 		"pkg.json",
 		"package.json",
 		".groc.json",
+		".travis.yml",
 		".gitignore",
 		"README.md"
 	],
