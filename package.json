@@ -1,6 +1,6 @@
 {
 	"devDependencies": {
-		"aureooms-node-package": "^1.0.0"
+		"aureooms-node-package": "^1.1.0"
 	},
 	"bugs": {
 		"url": "https://github.com/aureooms/js-mem/issues"
