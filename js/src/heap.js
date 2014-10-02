@@ -1,6 +1,7 @@
 
 
 /**
+ * /!\ INCOMPLETE
  * Heap manager backed by a buffer.
  */
 
@@ -84,7 +85,7 @@ var __heap__ = function (Buffer) {
 			}
 			else {
 				this.__addr[j] -= n;
-			}	
+			}
 		}
 		else {
 			if (joinleft) {

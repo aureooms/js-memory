@@ -1,7 +1,8 @@
 
 
 /**
- * Deep copy method for any object. Use with caution.
+ * Deep copy method for any object.
+ * /!\ Use with caution.
  */
 
 var deepcopy = function(object){
