@@ -1,6 +1,7 @@
 
 
 /**
+ * /!\ INCOMPLETE
  * Heap manager backed by a buffer.
  */
 
