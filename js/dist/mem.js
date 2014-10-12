@@ -22,7 +22,8 @@ exports.__calloc__ = __calloc__;
 
 
 /**
- * Deep copy method for any object. Use with caution.
+ * Deep copy method for any object.
+ * /!\ Use with caution.
  */
 
 var deepcopy = function(object){
@@ -44,6 +45,7 @@ exports.deepcopy = deepcopy;
 
 
 /**
+ * /!\ INCOMPLETE
  * Heap manager backed by a buffer.
  */
 
