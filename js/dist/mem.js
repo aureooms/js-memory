@@ -7,39 +7,16 @@
 
 
 /**
- * Method that creates an allocator from a constructor.
+ * Method that creates an allocator from an array constructor.
  */
 
-var __calloc__ = function(Constructor) {
-	return function(n) {
-		return new Constructor(n);
-	};
-};
+var __calloc__ = function ( ArrayConstructor ) {
+	return function ( n ) {
+		return new ArrayConstructor( n ) ;
+	} ;
+} ;
 
-exports.__calloc__ = __calloc__;
-
-/* js/src/deepcopy.js */
-
-
-/**
- * Deep copy method for any object.
- * /!\ Use with caution.
- */
-
-var deepcopy = function(object){
-	var copy = (object instanceof Array) ? [] : {};
-	for (i in object) {
-		if (object[i] && typeof object[i] === "object") {
-			copy[i] = deepcopy(object[i]);
-		}
-		else {
-			copy[i] = object[i];
-		}
-	}
-	return copy;
-};
-
-exports.deepcopy = deepcopy;
+exports.__calloc__ = __calloc__ ;
 
 /* js/src/heap.js */
 
@@ -49,31 +26,38 @@ exports.deepcopy = deepcopy;
  * Heap manager backed by a buffer.
  */
 
-var __heap__ = function (Buffer) {
+var heap = function ( Buffer ) {
 
-	var Heap = function (n) {
-		this.__buffer = new Buffer(n);
-		this.__n = 1;
-		this.__slo = 0;
-		this.__shi = 1;
-		this.__alo = 0;
-		this.__ahi = 1;
-		this.__size = new Uint32Array(1);
-		this.__addr = new Uint32Array(1);
-		this.__smap = new Uint32Array(1);
-		this.__amap = new Uint32Array(1);
-		this.__size[0] = n;
-		this.__addr[0] = 0;
-		this.__smap[0] = 0;
-		this.__amap[0] = 0;
+	/**
+	 * The *s* prefix in members and methods stands for size.
+	 * The *a* prefix in members and methods stands for address.
+	 */
+
+	var Heap = function ( n ) {
+		this.buffer = new Buffer( n ) ;
+		this.n = 1 ;
+		this.slo = 0 ;
+		this.shi = 1 ;
+		this.alo = 0 ;
+		this.ahi = 1 ;
+		this.size = new Uint32Array( 1 ) ;
+		this.addr = new Uint32Array( 1 ) ;
+		this.smap = new Uint32Array( 1 ) ;
+		this.amap = new Uint32Array( 1 ) ;
+		this.size[0] = n ;
+		this.addr[0] = 0 ;
+		this.smap[0] = 0 ;
+		this.amap[0] = 0 ;
 	};
 
-	Heap.prototype.alloc = function(n) {
-		var i, j;
-		i = this.ssearch(n, this.__slo, this.__shi);
-		this.__size[i] -= n;
-		this.__addr[i] += n;
-		j = this.ssearch(n, this.__slo, i);
+	Heap.prototype.alloc = function ( n ) {
+
+		var i , j ;
+
+		i = this.ssearch( n , this.slo, this.shi);
+		this.size[i] -= n;
+		this.addr[i] += n;
+		j = this.ssearch(n, this.slo, i);
 		this.smove(i, j);
 		return i;
 	};
@@ -81,74 +65,74 @@ var __heap__ = function (Buffer) {
 	Heap.prototype.smove = function(i, j) {
 		var tmp, m, n, k;
 		n = i - j;
-		m = this.__shi - this.__slo - n;
+		m = this.shi - this.slo - n;
 
-		if (this.__slo > 0 && m < n) {
-			--this.__slo;
-			for (k = this.__slo; k < j; ++k) {
-				this.__size[k] = this.__size[k+1];
-				this.__smap[k] = this.__smap[k+1];
+		if (this.slo > 0 && m < n) {
+			--this.slo;
+			for (k = this.slo; k < j; ++k) {
+				this.size[k] = this.size[k+1];
+				this.smap[k] = this.smap[k+1];
 			}
-			this.__size[j] = this.__size[i];
-			this.__smap[j] = this.__smap[i];
-			for (k = i; k < this.__shi; ++k) {
-				this.__size[k] = this.__size[k+1];
-				this.__smap[k] = this.__smap[k+1];
+			this.size[j] = this.size[i];
+			this.smap[j] = this.smap[i];
+			for (k = i; k < this.shi; ++k) {
+				this.size[k] = this.size[k+1];
+				this.smap[k] = this.smap[k+1];
 			}
-			--this.__shi;
+			--this.shi;
 		}
 		else {
-			tmp = this.__size[i];
+			tmp = this.size[i];
 			for (k = i; k > j; --k) {
-				this.__size[k] = this.__size[k-1];
+				this.size[k] = this.size[k-1];
 			}
-			this.__size[j] = tmp;
+			this.size[j] = tmp;
 
-			tmp = this.__smap[i];
+			tmp = this.smap[i];
 			for (k = i; k > j; --k) {
-				this.__smap[k] = this.__smap[k-1];
+				this.smap[k] = this.smap[k-1];
 			}
-			this.__smap[j] = tmp;
+			this.smap[j] = tmp;
 		}
 
-		this.__amap[this.__smap[j]] = j;
+		this.amap[this.smap[j]] = j;
 
 	};
 
 
 	Heap.prototype.free = function(i, n) {
 		var j, k, tmp, joinleft, joinright;
-		j = this.asearch(i, this.__alo, this.__ahi);
+		j = this.asearch(i, this.alo, this.ahi);
 
-		joinleft = this.__addr[j-1] + this.__size[this.__amap[j-1]] === i;
-		joinright = i + n === this.__addr[j];
+		joinleft = this.addr[j-1] + this.size[this.amap[j-1]] === i;
+		joinright = i + n === this.addr[j];
 
 		if (joinleft ^ joinright) {
 			if (joinleft) {
-				this.__size[this.__amap[j-1]] += n;
+				this.size[this.amap[j-1]] += n;
 			}
 			else {
-				this.__addr[j] -= n;
+				this.addr[j] -= n;
 			}
 		}
 		else {
 			if (joinleft) {
-				this.__addr[j-1] = this.__addr[j-1];
-				this.__size[y] = n + this.__size[j-1] + this.__size[j];
-				this.__smap[y] = j-1;
-				this.__amap[j-1] = y;
+				this.addr[j-1] = this.addr[j-1];
+				this.size[y] = n + this.size[j-1] + this.size[j];
+				this.smap[y] = j-1;
+				this.amap[j-1] = y;
 			}
 			else {
-				this.__addr[j] = i;
-				this.__size[y] = n;
-				this.__smap[y] = j;
-				this.__amap[j] = y;
+				this.addr[j] = i;
+				this.size[y] = n;
+				this.smap[y] = j;
+				this.amap[j] = y;
 			}
 		}
 
-		for (k = this.__ahi; k > j; --k) {
-			this.__addr[k] = this.__addr[k-1];
-			this.__amap[k] = this.__amap[k-1];
+		for (k = this.ahi; k > j; --k) {
+			this.addr[k] = this.addr[k-1];
+			this.amap[k] = this.amap[k-1];
 		}
 
 
@@ -157,7 +141,7 @@ var __heap__ = function (Buffer) {
 
 };
 
-exports.__heap__ = __heap__;
+exports.heap = heap;
 
 /* js/src/malloc.js */
 
@@ -166,11 +150,11 @@ exports.__heap__ = __heap__;
  * Method that allocates an ArrayBuffer.
  */
 
-var malloc = function(n) {
-	return new ArrayBuffer(n);
-};
+var malloc = function ( n ) {
+	return new ArrayBuffer( n ) ;
+} ;
 
-exports.malloc = malloc;
+exports.malloc = malloc ;
 
 /* js/src/pool.js */
 
@@ -179,33 +163,31 @@ exports.malloc = malloc;
  * Pool containing objects of a single type.
  */
 
-var __pool__ = function (Constructor, init) {
+var Pool = function ( init ) {
+	this.init = init ;
+	this.pool = [ ] ;
+} ;
 
-	var Pool = function () {
-		this.__pool = [];
-	};
+Pool.prototype.collect = function ( ) {
+	this.pool = [ ] ;
+} ;
 
-	Pool.prototype.collect = function () {
-		this.__pool = [];
-	};
+Pool.prototype.alloc = function ( ) {
 
-	Pool.prototype.alloc = function () {
-		if (this.__pool.length > 0) {
-			return this.__pool.pop();
-		}
-		else {
-			return new Constructor();
-		}
-	};
+	if ( this.pool.length > 0 ) {
+		return this.pool.pop() ;
+	}
 
-	Pool.prototype.free = function (object) {
-		this.__pool.push(object);
-	};
+	else {
+		return this.init() ;
+	}
 
-	return Pool;
+} ;
 
-};
+Pool.prototype.free = function ( object ) {
+	this.pool.push( object ) ;
+} ;
 
-exports.__pool__ = __pool__;
+exports.Pool = Pool ;
 
 })(typeof exports === 'undefined' ? this['mem'] = {} : exports);

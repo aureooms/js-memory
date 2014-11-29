@@ -4,31 +4,29 @@
  * Pool containing objects of a single type.
  */
 
-var __pool__ = function (Constructor, init) {
+var Pool = function ( init ) {
+	this.init = init ;
+	this.pool = [ ] ;
+} ;
 
-	var Pool = function () {
-		this.__pool = [];
-	};
+Pool.prototype.collect = function ( ) {
+	this.pool = [ ] ;
+} ;
 
-	Pool.prototype.collect = function () {
-		this.__pool = [];
-	};
+Pool.prototype.alloc = function ( ) {
 
-	Pool.prototype.alloc = function () {
-		if (this.__pool.length > 0) {
-			return this.__pool.pop();
-		}
-		else {
-			return new Constructor();
-		}
-	};
+	if ( this.pool.length > 0 ) {
+		return this.pool.pop() ;
+	}
 
-	Pool.prototype.free = function (object) {
-		this.__pool.push(object);
-	};
+	else {
+		return this.init() ;
+	}
 
-	return Pool;
+} ;
 
-};
+Pool.prototype.free = function ( object ) {
+	this.pool.push( object ) ;
+} ;
 
-exports.__pool__ = __pool__;
+exports.Pool = Pool ;
