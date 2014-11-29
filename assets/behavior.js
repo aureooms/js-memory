@@ -13,7 +13,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "commentsOnly": true,
           "name": "Markdown"
         },
-        "sourcePath": "/home/genius/dev/js/js-mem/README.md",
+        "sourcePath": "/home/aureooms/dev/js/js-mem/README.md",
         "projectPath": "README.md",
         "targetPath": "index",
         "pageTitle": "index",
@@ -33,7 +33,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-mem/js/src/calloc.js",
+        "sourcePath": "/home/aureooms/dev/js/js-mem/js/src/calloc.js",
         "projectPath": "js/src/calloc.js",
         "targetPath": "calloc",
         "pageTitle": "calloc",
@@ -53,27 +53,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-mem/js/src/deepcopy.js",
-        "projectPath": "js/src/deepcopy.js",
-        "targetPath": "deepcopy",
-        "pageTitle": "deepcopy",
-        "title": "deepcopy"
-      },
-      "depth": 1,
-      "outline": []
-    }, {
-      "type": "file",
-      "data": {
-        "language": {
-          "nameMatchers": [".js"],
-          "pygmentsLexer": "javascript",
-          "multiLineComment": ["/*", "*", "*/"],
-          "singleLineComment": ["//"],
-          "ignorePrefix": "}",
-          "foldPrefix": "^",
-          "name": "JavaScript"
-        },
-        "sourcePath": "/home/genius/dev/js/js-mem/js/src/heap.js",
+        "sourcePath": "/home/aureooms/dev/js/js-mem/js/src/heap.js",
         "projectPath": "js/src/heap.js",
         "targetPath": "heap",
         "pageTitle": "heap",
@@ -93,7 +73,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-mem/js/src/malloc.js",
+        "sourcePath": "/home/aureooms/dev/js/js-mem/js/src/malloc.js",
         "projectPath": "js/src/malloc.js",
         "targetPath": "malloc",
         "pageTitle": "malloc",
@@ -113,7 +93,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/genius/dev/js/js-mem/js/src/pool.js",
+        "sourcePath": "/home/aureooms/dev/js/js-mem/js/src/pool.js",
         "projectPath": "js/src/pool.js",
         "targetPath": "pool",
         "pageTitle": "pool",
