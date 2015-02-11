@@ -1,0 +1,11 @@
+{
+	"description": "memory management code bricks for JavaScript",
+	"version": "1.0.0",
+	"repo": "aureooms/js-mem",
+	"scripts": [
+		"js/dist/mem.js"
+	],
+	"name": "aureooms-js-mem",
+	"license": "AGPL-3.0",
+	"main": "js/dist/mem.js"
+}
