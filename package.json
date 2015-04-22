@@ -16,7 +16,7 @@
 		"test": "./node_modules/.bin/aureooms-node-package-test",
 		"doc": "./node_modules/.bin/groc"
 	},
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "AGPL-3.0",
 	"dependencies": {},
 	"keywords": [
