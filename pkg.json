@@ -1,5 +1,5 @@
 {
-	"ns": "mem",
+	"name": "memory",
 	"src": "js/src/",
 	"debug": false,
 	"out": "js/dist/",
@@ -11,7 +11,8 @@
 		"main": [
 			"js",
 			"dist",
-			"mem.js"
+			"memory.js"
 		]
-	}
+	},
+	"babel": true
 }

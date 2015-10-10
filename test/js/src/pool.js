@@ -1,9 +1,7 @@
 
-var functools , nextid ;
+var functools = require( "aureooms-js-functools" ) ;
 
-functools = require( "aureooms-js-functools" ) ;
-
-nextid = -1 ;
+var nextid = -1 ;
 
 function Item ( ) {
 	this.id = ++nextid ;
@@ -14,7 +12,7 @@ test( "pool" , function ( ) {
 
 	var pool , i , n , k , items ;
 
-	pool = new mem.Pool( functools.partial( functools.create , [ Item ] ) );
+	pool = new memory.Pool( functools.partial( functools.create , [ Item ] ) );
 
 	items = [ ] ;
 

@@ -15,7 +15,7 @@
     ".codeclimate.yml"
   ],
   "description": "memory management code bricks for JavaScript",
-  "main": "js/dist/mem.js",
-  "homepage": "http://aureooms.github.io/js-mem/",
-  "name": "aureooms-js-mem"
+  "main": "js/dist/memory.js",
+  "homepage": "http://aureooms.github.io/js-memory/",
+  "name": "aureooms-js-memory"
 }

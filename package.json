@@ -1,16 +1,16 @@
 {
 	"devDependencies": {
-		"aureooms-node-package": "^1.1.3",
-		"aureooms-js-functools": "^1.0.0"
+		"aureooms-node-package": "^5.0.2",
+		"aureooms-js-functools": "^2.0.3"
 	},
 	"bugs": {
-		"url": "https://github.com/aureooms/js-mem/issues"
+		"url": "https://github.com/aureooms/js-memory/issues"
 	},
-	"homepage": "http://aureooms.github.io/js-mem/",
+	"homepage": "http://aureooms.github.io/js-memory/",
 	"description": "memory management code bricks for JavaScript",
-	"main": "js/dist/mem.js",
+	"main": "js/dist/memory.js",
 	"author": "aureooms",
-	"name": "aureooms-js-mem",
+	"name": "aureooms-js-memory",
 	"scripts": {
 		"build": "./node_modules/.bin/aureooms-node-package-build",
 		"test": "./node_modules/.bin/aureooms-node-package-test",
@@ -26,10 +26,14 @@
 		"javascript",
 		"js",
 		"management",
-		"memory"
+		"memory",
+		"ender"
 	],
 	"repository": {
-		"url": "https://github.com/aureooms/js-mem.git",
+		"url": "https://github.com/aureooms/js-memory.git",
 		"type": "git"
+	},
+	"spm":{
+		"main": "js/dist/memory.js"
 	}
 }
