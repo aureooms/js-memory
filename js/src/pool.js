@@ -1,10 +1,7 @@
-
-
 /**
  * Pool containing objects of a single type.
  */
-
-var Pool = function ( init ) {
+const Pool = function ( init ) {
 	this.init = init ;
 	this.pool = [ ] ;
 } ;
