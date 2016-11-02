@@ -1,7 +1,7 @@
 {
   "name": "aureooms-js-memory",
   "description": "Memory management code bricks for JavaScript",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "aureooms",
   "ava": {
     "require": [
@@ -34,12 +34,10 @@
     "esdoc": "^0.4.8",
     "nyc": "^8.4.0"
   },
-  "homepage": "http://aureooms.github.io/js-memory/",
+  "homepage": "http://aureooms.github.io/js-memory",
   "keywords": [
     "allocation",
     "arrays",
-    "bricks",
-    "ender",
     "javascript",
     "js",
     "management",
