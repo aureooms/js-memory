@@ -1,39 +1,60 @@
 {
-	"devDependencies": {
-		"aureooms-node-package": "^6.0.1",
-		"aureooms-js-functools": "^2.0.3"
-	},
-	"bugs": {
-		"url": "https://github.com/aureooms/js-memory/issues"
-	},
-	"homepage": "http://aureooms.github.io/js-memory/",
-	"description": "memory management code bricks for JavaScript",
-	"main": "js/dist/memory.js",
-	"author": "aureooms",
-	"name": "aureooms-js-memory",
-	"scripts": {
-		"build": "./node_modules/.bin/aureooms-node-package-build",
-		"test": "./node_modules/.bin/aureooms-node-package-test",
-		"doc": "./node_modules/.bin/groc"
-	},
-	"version": "2.0.0",
-	"license": "AGPL-3.0",
-	"dependencies": {},
-	"keywords": [
-		"allocation",
-		"arrays",
-		"bricks",
-		"javascript",
-		"js",
-		"management",
-		"memory",
-		"ender"
-	],
-	"repository": {
-		"url": "https://github.com/aureooms/js-memory.git",
-		"type": "git"
-	},
-	"spm": {
-		"main": "js/dist/memory.js"
-	}
+  "name": "aureooms-js-memory",
+  "description": "Memory management code bricks for JavaScript",
+  "version": "2.0.0",
+  "author": "aureooms",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-memory/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "aureooms-js-functools": "^2.0.3",
+    "ava": "^0.16.0",
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "coveralls": "^2.11.14",
+    "esdoc": "^0.4.8",
+    "nyc": "^8.4.0"
+  },
+  "homepage": "http://aureooms.github.io/js-memory/",
+  "keywords": [
+    "allocation",
+    "arrays",
+    "bricks",
+    "ender",
+    "javascript",
+    "js",
+    "management",
+    "memory"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/aureooms/js-memory.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src"
+  }
 }

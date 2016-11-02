@@ -1,24 +1,3 @@
-(function(exports, undefined){
-
-	'use strict';
-
-
-/* js/src/calloc.js */
-
-
-/**
- * Method that creates an allocator from an array constructor.
- */
-
-var __calloc__ = function ( ArrayConstructor ) {
-	return function ( n ) {
-		return new ArrayConstructor( n ) ;
-	} ;
-} ;
-
-exports.__calloc__ = __calloc__ ;
-
-/* js/src/heap.js */
 
 
 /**
@@ -26,7 +5,7 @@ exports.__calloc__ = __calloc__ ;
  * Heap manager backed by a buffer.
  */
 
-var heap = function ( Buffer ) {
+export function heap ( Buffer ) {
 
 	/**
 	 * The *s* prefix in members and methods stands for size.
@@ -138,56 +117,4 @@ var heap = function ( Buffer ) {
 
 	};
 
-
-};
-
-exports.heap = heap;
-
-/* js/src/malloc.js */
-
-
-/**
- * Method that allocates an ArrayBuffer.
- */
-
-var malloc = function ( n ) {
-	return new ArrayBuffer( n ) ;
-} ;
-
-exports.malloc = malloc ;
-
-/* js/src/pool.js */
-
-
-/**
- * Pool containing objects of a single type.
- */
-
-var Pool = function ( init ) {
-	this.init = init ;
-	this.pool = [ ] ;
-} ;
-
-Pool.prototype.collect = function ( ) {
-	this.pool = [ ] ;
-} ;
-
-Pool.prototype.alloc = function ( ) {
-
-	if ( this.pool.length > 0 ) {
-		return this.pool.pop() ;
-	}
-
-	else {
-		return this.init() ;
-	}
-
-} ;
-
-Pool.prototype.free = function ( object ) {
-	this.pool.push( object ) ;
-} ;
-
-exports.Pool = Pool ;
-
-})(typeof exports === 'undefined' ? this['mem'] = {} : exports);
+}

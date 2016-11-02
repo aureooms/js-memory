@@ -1,7 +1,7 @@
 /**
  * Pool containing objects of a single type.
  */
-const Pool = function ( init ) {
+export function Pool ( init ) {
 	this.init = init ;
 	this.pool = [ ] ;
 } ;
@@ -25,5 +25,3 @@ Pool.prototype.alloc = function ( ) {
 Pool.prototype.free = function ( object ) {
 	this.pool.push( object ) ;
 } ;
-
-exports.Pool = Pool ;
