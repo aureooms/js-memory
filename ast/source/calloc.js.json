@@ -1,0 +1,290 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "_calloc",
+              "range": [
+                85,
+                92
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 13
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20
+                }
+              }
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "ArrayConstructor",
+                  "range": [
+                    95,
+                    111
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 39
+                    }
+                  }
+                }
+              ],
+              "body": {
+                "type": "ArrowFunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "n",
+                    "range": [
+                      115,
+                      116
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 43
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 44
+                      }
+                    }
+                  }
+                ],
+                "body": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "ArrayConstructor",
+                    "range": [
+                      124,
+                      140
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 52
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 68
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "n",
+                      "range": [
+                        142,
+                        143
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 70
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 71
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    120,
+                    145
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 48
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 73
+                    }
+                  }
+                },
+                "generator": false,
+                "expression": true,
+                "range": [
+                  115,
+                  145
+                ],
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 43
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 73
+                  }
+                }
+              },
+              "generator": false,
+              "expression": true,
+              "range": [
+                95,
+                145
+              ],
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 23
+                },
+                "end": {
+                  "line": 5,
+                  "column": 73
+                }
+              }
+            },
+            "range": [
+              85,
+              145
+            ],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 13
+              },
+              "end": {
+                "line": 5,
+                "column": 73
+              }
+            }
+          }
+        ],
+        "kind": "const",
+        "range": [
+          79,
+          147
+        ],
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 7
+          },
+          "end": {
+            "line": 5,
+            "column": 75
+          }
+        },
+        "leadingComments": [
+          {
+            "type": "Block",
+            "value": "*\n * Method that creates an allocator from an array constructor.\n ",
+            "range": [
+              0,
+              70
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 3,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": []
+      },
+      "specifiers": [],
+      "source": null,
+      "range": [
+        72,
+        147
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 75
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * Method that creates an allocator from an array constructor.\n ",
+          "range": [
+            0,
+            70
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    72,
+    147
+  ],
+  "loc": {
+    "start": {
+      "line": 5,
+      "column": 0
+    },
+    "end": {
+      "line": 5,
+      "column": 75
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * Method that creates an allocator from an array constructor.\n ",
+      "range": [
+        0,
+        70
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    }
+  ]
+}
