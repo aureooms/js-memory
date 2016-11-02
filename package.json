@@ -34,12 +34,10 @@
     "esdoc": "^0.4.8",
     "nyc": "^8.4.0"
   },
-  "homepage": "http://aureooms.github.io/js-memory/",
+  "homepage": "http://aureooms.github.io/js-memory",
   "keywords": [
     "allocation",
     "arrays",
-    "bricks",
-    "ender",
     "javascript",
     "js",
     "management",
