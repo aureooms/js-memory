@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-memory
+jspm install npm:@aureooms/js-memory
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-memory --save
+npm install @aureooms/js-memory --save
 ```

@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const memory = require( 'aureooms-js-memory' ) ;
+const memory = require( '@aureooms/js-memory' ) ;
 // or
-import memory from 'aureooms-js-memory' ;
+import memory from '@aureooms/js-memory' ;
 ```
