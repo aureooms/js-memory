@@ -2,7 +2,7 @@ import test from 'ava' ;
 
 import { Pool } from '../../src' ;
 
-import { partial , create } from 'aureooms-js-functools' ;
+import { partial , create } from '@aureooms/js-functools' ;
 
 let nextid = -1 ;
 
