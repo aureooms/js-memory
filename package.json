@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-memory",
   "description": "Memory management code bricks for JavaScript",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "author": "aureooms",
   "ava": {
     "require": [
