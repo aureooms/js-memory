@@ -1,4 +1,4 @@
-[js-memory](http://aureooms.github.io/js-memory)
+[@aureooms/js-memory](https://aureooms.github.io/js-memory)
 ==
 
 Memory management code bricks for JavaScript.
