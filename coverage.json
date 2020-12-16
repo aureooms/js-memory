@@ -1,13 +1,8 @@
 {
-  "coverage": "100%",
-  "expectCount": 4,
+  "coverage": "57.14%",
+  "expectCount": 7,
   "actualCount": 4,
   "files": {
-    "src/pool.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
     "src/calloc.js": {
       "expectCount": 1,
       "actualCount": 1,
@@ -22,6 +17,15 @@
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
+    },
+    "src/pool.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        13,
+        25
+      ]
     }
   }
 }

@@ -1,20 +1,68 @@
 {
-  "type": "Program",
-  "body": [
-    {
-      "type": "ExportNamedDeclaration",
-      "declaration": {
-        "type": "VariableDeclaration",
-        "declarations": [
-          {
-            "type": "VariableDeclarator",
-            "id": {
-              "type": "Identifier",
-              "name": "_calloc",
-              "range": [
-                85,
-                92
-              ],
+  "type": "File",
+  "start": 0,
+  "end": 148,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 6,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 148,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 6,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 72,
+        "end": 147,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 75
+          }
+        },
+        "specifiers": [],
+        "source": null,
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 79,
+          "end": 147,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 7
+            },
+            "end": {
+              "line": 5,
+              "column": 75
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 85,
+              "end": 145,
               "loc": {
                 "start": {
                   "line": 5,
@@ -22,184 +70,201 @@
                 },
                 "end": {
                   "line": 5,
-                  "column": 20
+                  "column": 73
                 }
-              }
-            },
-            "init": {
-              "type": "ArrowFunctionExpression",
-              "id": null,
-              "params": [
-                {
-                  "type": "Identifier",
-                  "name": "ArrayConstructor",
-                  "range": [
-                    95,
-                    111
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 5,
-                      "column": 23
-                    },
-                    "end": {
-                      "line": 5,
-                      "column": 39
-                    }
-                  }
-                }
-              ],
-              "body": {
-                "type": "ArrowFunctionExpression",
-                "id": null,
-                "params": [
-                  {
-                    "type": "Identifier",
-                    "name": "n",
-                    "range": [
-                      115,
-                      116
-                    ],
-                    "loc": {
-                      "start": {
-                        "line": 5,
-                        "column": 43
-                      },
-                      "end": {
-                        "line": 5,
-                        "column": 44
-                      }
-                    }
-                  }
-                ],
-                "body": {
-                  "type": "NewExpression",
-                  "callee": {
-                    "type": "Identifier",
-                    "name": "ArrayConstructor",
-                    "range": [
-                      124,
-                      140
-                    ],
-                    "loc": {
-                      "start": {
-                        "line": 5,
-                        "column": 52
-                      },
-                      "end": {
-                        "line": 5,
-                        "column": 68
-                      }
-                    }
-                  },
-                  "arguments": [
-                    {
-                      "type": "Identifier",
-                      "name": "n",
-                      "range": [
-                        142,
-                        143
-                      ],
-                      "loc": {
-                        "start": {
-                          "line": 5,
-                          "column": 70
-                        },
-                        "end": {
-                          "line": 5,
-                          "column": 71
-                        }
-                      }
-                    }
-                  ],
-                  "range": [
-                    120,
-                    145
-                  ],
-                  "loc": {
-                    "start": {
-                      "line": 5,
-                      "column": 48
-                    },
-                    "end": {
-                      "line": 5,
-                      "column": 73
-                    }
-                  }
-                },
-                "generator": false,
-                "expression": true,
-                "range": [
-                  115,
-                  145
-                ],
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 85,
+                "end": 92,
                 "loc": {
                   "start": {
                     "line": 5,
-                    "column": 43
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 20
+                  },
+                  "identifierName": "_calloc"
+                },
+                "name": "_calloc",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 95,
+                "end": 145,
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 23
                   },
                   "end": {
                     "line": 5,
                     "column": 73
                   }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 85,
+                  "end": 92,
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 20
+                    },
+                    "identifierName": "_calloc"
+                  },
+                  "name": "_calloc",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": true,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 95,
+                    "end": 111,
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 39
+                      },
+                      "identifierName": "ArrayConstructor"
+                    },
+                    "name": "ArrayConstructor"
+                  }
+                ],
+                "body": {
+                  "type": "ArrowFunctionExpression",
+                  "start": 115,
+                  "end": 145,
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 43
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 73
+                    }
+                  },
+                  "id": null,
+                  "generator": false,
+                  "expression": true,
+                  "async": false,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "start": 115,
+                      "end": 116,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 43
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 44
+                        },
+                        "identifierName": "n"
+                      },
+                      "name": "n"
+                    }
+                  ],
+                  "body": {
+                    "type": "NewExpression",
+                    "start": 120,
+                    "end": 145,
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 48
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 73
+                      }
+                    },
+                    "callee": {
+                      "type": "Identifier",
+                      "start": 124,
+                      "end": 140,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 52
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 68
+                        },
+                        "identifierName": "ArrayConstructor"
+                      },
+                      "name": "ArrayConstructor"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "start": 142,
+                        "end": 143,
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 70
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 71
+                          },
+                          "identifierName": "n"
+                        },
+                        "name": "n"
+                      }
+                    ]
+                  }
                 }
               },
-              "generator": false,
-              "expression": true,
-              "range": [
-                95,
-                145
-              ],
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Method that creates an allocator from an array constructor.\n ",
+              "start": 0,
+              "end": 70,
               "loc": {
                 "start": {
-                  "line": 5,
-                  "column": 23
+                  "line": 1,
+                  "column": 0
                 },
                 "end": {
-                  "line": 5,
-                  "column": 73
+                  "line": 3,
+                  "column": 3
                 }
               }
-            },
-            "range": [
-              85,
-              145
-            ],
-            "loc": {
-              "start": {
-                "line": 5,
-                "column": 13
-              },
-              "end": {
-                "line": 5,
-                "column": 73
-              }
             }
-          }
-        ],
-        "kind": "const",
-        "range": [
-          79,
-          147
-        ],
-        "loc": {
-          "start": {
-            "line": 5,
-            "column": 7
-          },
-          "end": {
-            "line": 5,
-            "column": 75
-          }
+          ],
+          "trailingComments": []
         },
         "leadingComments": [
           {
-            "type": "Block",
+            "type": "CommentBlock",
             "value": "*\n * Method that creates an allocator from an array constructor.\n ",
-            "range": [
-              0,
-              70
-            ],
+            "start": 0,
+            "end": 70,
             "loc": {
               "start": {
                 "line": 1,
@@ -211,70 +276,17 @@
               }
             }
           }
-        ],
-        "trailingComments": []
-      },
-      "specifiers": [],
-      "source": null,
-      "range": [
-        72,
-        147
-      ],
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 0
-        },
-        "end": {
-          "line": 5,
-          "column": 75
-        }
-      },
-      "leadingComments": [
-        {
-          "type": "Block",
-          "value": "*\n * Method that creates an allocator from an array constructor.\n ",
-          "range": [
-            0,
-            70
-          ],
-          "loc": {
-            "start": {
-              "line": 1,
-              "column": 0
-            },
-            "end": {
-              "line": 3,
-              "column": 3
-            }
-          }
-        }
-      ]
-    }
-  ],
-  "sourceType": "module",
-  "range": [
-    72,
-    147
-  ],
-  "loc": {
-    "start": {
-      "line": 5,
-      "column": 0
-    },
-    "end": {
-      "line": 5,
-      "column": 75
-    }
+        ]
+      }
+    ],
+    "directives": []
   },
   "comments": [
     {
-      "type": "Block",
+      "type": "CommentBlock",
       "value": "*\n * Method that creates an allocator from an array constructor.\n ",
-      "range": [
-        0,
-        70
-      ],
+      "start": 0,
+      "end": 70,
       "loc": {
         "start": {
           "line": 1,
@@ -283,6 +295,419 @@
         "end": {
           "line": 3,
           "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Method that creates an allocator from an array constructor.\n ",
+      "start": 0,
+      "end": 70,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 72,
+      "end": 78,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 79,
+      "end": 84,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_calloc",
+      "start": 85,
+      "end": 92,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 13
+        },
+        "end": {
+          "line": 5,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 93,
+      "end": 94,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 21
+        },
+        "end": {
+          "line": 5,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ArrayConstructor",
+      "start": 95,
+      "end": 111,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 23
+        },
+        "end": {
+          "line": 5,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 112,
+      "end": 114,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 40
+        },
+        "end": {
+          "line": 5,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "n",
+      "start": 115,
+      "end": 116,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 43
+        },
+        "end": {
+          "line": 5,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 117,
+      "end": 119,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45
+        },
+        "end": {
+          "line": 5,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 120,
+      "end": 123,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 48
+        },
+        "end": {
+          "line": 5,
+          "column": 51
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ArrayConstructor",
+      "start": 124,
+      "end": 140,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 52
+        },
+        "end": {
+          "line": 5,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 140,
+      "end": 141,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 68
+        },
+        "end": {
+          "line": 5,
+          "column": 69
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "n",
+      "start": 142,
+      "end": 143,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 70
+        },
+        "end": {
+          "line": 5,
+          "column": 71
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 144,
+      "end": 145,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 72
+        },
+        "end": {
+          "line": 5,
+          "column": 73
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 146,
+      "end": 147,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 74
+        },
+        "end": {
+          "line": 5,
+          "column": 75
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 148,
+      "end": 148,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 0
         }
       }
     }
