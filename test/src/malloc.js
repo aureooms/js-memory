@@ -2,11 +2,11 @@ import test from 'ava' ;
 
 import { malloc } from '../../src' ;
 
-test( 'malloc' , assert => {
+test( 'malloc' , t => {
 
 	const a = malloc( 10 ) ;
 
-	assert.is( a.byteLength , 10 , 'check length' ) ;
-	assert.truthy( a instanceof ArrayBuffer , 'check type' ) ;
+	t.is( a.byteLength , 10 , 'check length' ) ;
+	t.truthy( a instanceof ArrayBuffer , 'check type' ) ;
 
 } ) ;
