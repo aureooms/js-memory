@@ -1,4 +1,4 @@
-[@aureooms/js-memory](https://aureooms.github.io/js-memory)
+:floppy_disk: [@aureooms/js-memory](https://aureooms.github.io/js-memory)
 ==
 
 Memory management code bricks for JavaScript.
