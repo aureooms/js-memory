@@ -79,10 +79,6 @@
   "devDependencies": {
     "@aureooms/js-functools": "^2.0.3",
     "ava": "^3.14.0",
-    "babel-cli": "^6.18.0",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-latest": "^6.16.0",
-    "codeclimate-test-reporter": "^0.4.0",
     "coveralls": "^2.11.14",
     "esdoc": "^1.1.0",
     "nyc": "^15.1.0",
