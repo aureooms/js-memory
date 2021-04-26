@@ -1,2 +1,2 @@
 # Examples
-See [test files](https://github.com/aureooms/js-memory/tree/main/test/js/src).
+See [test files](https://github.com/make-github-pseudonymous-again/js-memory/tree/main/test/js/src).

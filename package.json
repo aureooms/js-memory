@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-memory/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-memory/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -110,7 +110,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-memory.git",
+    "url": "https://github.com/make-github-pseudonymous-again/js-memory.git",
     "type": "git"
   },
   "scripts": {
